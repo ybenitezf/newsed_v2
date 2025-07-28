@@ -13,14 +13,14 @@ def factory() -> Any:
     
     return app
 
-def run_app() -> None:
+def web_app_factory() -> None:
     print("Starting web server")
     ft.serve(
-        appname="newseditor.webapp.core",
+        appname="newseditor.drivers.webapp.core",
         app="factory",
         reload=False
     )
 
 
 if __name__ == "__main__":
-    run_app()
+    web_app_factory()

@@ -48,5 +48,5 @@ class HelloWorld(toga.App):
             print("web app terminated")
         return True
 
-def main(web_app: Callable[..., None]):
+def start_gui(web_app: Callable[..., None]):
     return HelloWorld(web_app=web_app)
